@@ -11,6 +11,8 @@ from fipy.tools import numerix
 from joblib import Parallel, delayed
 import multiprocessing
 
+import scipy
+
 def NormDotProduct(mx, my, mz, uax, uay, uaz, scaleFac):
     mag2 = (mx*mx) + (my*my) + (mz*mz)
     mag = numerix.sqrt(mag2)
